@@ -4,11 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <button class="btn btn-active bg-lime-400">Blog</button>
+              
+            </div>
+            <div class="navbar-center hidden lg:flex gap-2" >
+                <div><img src="assets/logo.png" alt=""></div>
+                <div><h4>Donate Bangladesh</h4></div>
+              
+            </div>
+            <div class="navbar-end flex gap-2">
+                <div><img src="assets/coin.png" alt=""></div>
+                <div><p><span id="your-balance">5500 </span> BDT</p> </div>
+            
+            </div>
+          </div>
+    </nav>
+
+    <main>
+        <section>
+          <!-- button add -->
+        
+        <div class="flex place-content-center gap-2 mt-14">
+          <!-- button1 -->
+
+          <div><button id="donetion-btn" class="btn bg-lime-400">Donation</button></div>
+          <!-- button2 -->
+          <div><button id="history-btn" class="btn bg-lime-400">History</button></div>
+      </div>
+      <!-- 1111 -->
+        </section>
+
+          <section class="" id="card-1">
+            <div  class=" mt-14  boder border-solid border-2 border-sky-500 lg:flex lg:mx-80 p-5   "  id="card">
+              <!-- card1 -->
+              <div  class="card-actions"><img 
+                  src="assets/noakhali.png"
+                  alt="Movie" /></div>
+              <div class="card-body">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <p><span id="all-donate">0</span>BDT</p>
+                  </div>
+                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br>supplies and  to those affected by this disaster. Every contribution, <br>big or small, makes  difference. Please join us in supporting the relief <br>efforts and making a positive impact on the lives of those in need.</p>
+                <div>
+                  <!-- inpufild -->
+                  <input type="text" id="donet-ammount" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
+                </div>
+                <div class="card-actions ">
+                  <button class="btn btn-primary" id="donet">Donate Now</button>
+                </div>
+              </div>
+            </div>
+            
+  
+            <div id="card-2" class=" hidden mt-14 boder border-solid border-2 border-sky-500 lg:flex lg:mx-80 p-5 ">
+              <!-- card2 -->
+              <div class="card-actions"><img
+                  src="assets/feni.png"
+                  alt="Movie" /></div>
+              <div class="card-body">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <p><span>0</span>BDT</p>
+                  </div>
+                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br>supplies and  to those affected by this disaster. Every contribution, <br>big or small, makes  difference. Please join us in supporting the relief <br>efforts and making a positive impact on the lives of those in need.</p>
+                <div>
+                  <!-- inpufild -->
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
+                </div>
+                <div class="card-actions ">
+                  <button class="btn btn-primary">Donate Now</button>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div id="card-3" class=" mt-14  boder border-solid border-2 border-sky-500 lg:flex lg:mx-80 p-5 ">
+              <!-- card3 -->
+              <div class="card-actions"><img
+                  src="assets/quota-protest.png"
+                  alt="Movie" /></div>
+              <div class="card-body">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <p><span>0</span>BDT</p>
+                  </div>
+                <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br>supplies and  to those affected by this disaster. Every contribution, <br>big or small, makes  difference. Please join us in supporting the relief <br>efforts and making a positive impact on the lives of those in need.</p>
+                <div>
+                  <!-- inpufild -->
+                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
+                </div>
+                <div class="card-actions ">
+                  <button class="btn btn-primary">Donate Now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section>
+            <div id="history-section" class="boder border-solid border-2 hidden">
+              
+              <div id="hisory">
+
+              </div>
+              <div id="currentTime">
+
+              </div>
+            </div>
+          </section>
+          
+    </main>
 
 
     <script src="index.js"></script>
+    <script src="function.js"></script>
+    <script src="faethure.js"></script>
 </body>
 </html>
