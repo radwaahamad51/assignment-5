@@ -7,12 +7,68 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<style>
+  
+  .custom-alert {
+      display: none;
+      width: 350px;
+      padding: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      z-index: 1000;
+  }
+
+  
+  .custom-alert h2 {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 24px;
+  }
+
+  
+  .custom-alert p {
+      font-size: 16px;
+      margin: 5px 0;
+  }
+
+  
+  .close-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  .close-btn:hover {
+      background-color: #d32f2f;
+  }
+</style>
+
+
 </head>
 <body>
+  <div id="myCustomAlert" class="custom-alert">
+    <h2>Congrats!</h2>
+   <div class="flex justify-center"> <img class="flex justify-center" src="assets/coin.png" alt="cone" /></div>
+    <p>You Have Donated for Humankind</p>
+    <p><strong>Successfully</strong></p>
+    <button class="close-btn" id="myCustomAlert" onclick="closeAlert()">Close Confirmation</button>
+</div>
+
     <nav>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <button class="btn btn-active bg-lime-400">Blog</button>
+              <button id="blog-btn" class="btn btn-active bg-lime-400">Blog</button>
               
             </div>
             <div class="navbar-center hidden lg:flex gap-2" >
@@ -60,7 +116,7 @@
                   <input type="text" id="donet-ammount" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
                 </div>
                 <div class="card-actions ">
-                  <button class="btn btn-primary" id="donet">Donate Now</button>
+                  <button class="btn bg-lime-400 w-full" id="donet">Donate Now</button>
                 </div>
               </div>
             </div>
@@ -78,12 +134,12 @@
                   </div>
                 <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p> The recent floods in Feni have devastated local communities, leading <br>to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br>supplies, to those affected by this calamity. Together, we can offer <br>crucial support and help rebuild lives in the aftermath of this disaster <br>. Every contribution counts towards making a real difference. Please <br>consider donating today to assist those in urgent need.</p>
-                <div>
+                <div class="">
                   <!-- inpufild -->
                   <input id="donet-ammount2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
                 </div>
                 <div class="card-actions ">
-                  <button id="donetion-bt" class="btn btn-primary ">Donate Now</button>
+                  <button id="donetion-bt" class="btn bg-lime-400 w-full ">Donate Now</button>
                 </div>
               </div>
             </div>
@@ -106,7 +162,7 @@
                   <input id="donet-ammount3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs">
                 </div>
                 <div class="card-actions ">
-                  <button id="donatin-btn-extra" class="btn btn-primary">Donate Now</button>
+                  <button id="donatin-btn-extra" class="btn  w-full bg-lime-400">Donate Now</button>
                 </div>
               </div>
             </div>

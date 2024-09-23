@@ -19,14 +19,30 @@ document.getElementById('donet').addEventListener('click', function(event){
     console.log(h1)
     document.getElementById('hisory').appendChild(h1);
 
+
+    document.getElementById("myCustomAlert").style.display = "block";
+    
+
+
+
     
 
     
    } else {
-    alert('wront')
+    alert('wrong amount')
    }
 
    
+})
+
+document.getElementById('blog-btn').addEventListener('click', function(event){
+    // event.preventDefault();
+    window.location.href = '/question.html'
+
+})
+
+document.getElementById('myCustomAlert').addEventListener('click',function closeAlert() {
+    document.getElementById("myCustomAlert").style.display = "none";
 })
 
 

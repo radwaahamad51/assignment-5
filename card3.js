@@ -20,8 +20,18 @@ document.getElementById('donatin-btn-extra').addEventListener('click', function(
      h1.innerText = `${tranferflot} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
     console.log(h1)
      document.getElementById('hisory').appendChild(h1);
+     document.getElementById("myCustomAlert").style.display = "block";
+
       
     }
+    else {
+      alert('wrong amount')
+     }
 
  
   })
+
+  
+  document.getElementById('myCustomAlert').addEventListener('click',function closeAlert() {
+    document.getElementById("myCustomAlert").style.display = "none";
+})

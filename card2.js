@@ -22,15 +22,22 @@ document.getElementById('donetion-bt').addEventListener('click', function(){
     console.log(h1)
      document.getElementById('hisory').appendChild(h1);
 
+     document.getElementById("myCustomAlert").style.display = "block";
+
     
 
     
    } else {
-    alert('wront')
+    alert('wrong amount')
    }
 
    
 })
+
+document.getElementById('myCustomAlert').addEventListener('click',function closeAlert() {
+  document.getElementById("myCustomAlert").style.display = "none";
+})
+
 
 
     
